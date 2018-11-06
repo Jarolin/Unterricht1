@@ -43,3 +43,8 @@ Am 29. Oktober führten wir die Prozedur Pause ein, da es mittlerweile 3 Stellen
 ### 30. Oktober - Überarbeiten Github
 
 Am 30. Oktober überarbeiteten wir diese Github Seite und fassten einiges zusammen. Zusätzlich erstellten wir einen Timer. Zusätzlich haben wir eine optionale Hintergrundmusik eingefügt.
+
+### 6. November - Überarbeiten Github 2 + Musik
+
+Zusätzlich haben wir die optionale Hintergrundmusik und Effekte überarbeitet/eingefügt
+Wir haben begonnen eine HighSCore liste hinzuzufügen.
