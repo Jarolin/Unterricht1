@@ -69,7 +69,10 @@ Der aktuelle Code mit der neuen Pauseprozedur
 
 ### 30. Oktober - Überarbeiten Github
 
-Am 30. Oktober überarbeiteten wir diese Github Seite und fassten einiges zusammen. Zusätzlich erstellten wir einen Timer. Zusätzlich haben wir eine optionale Hintergrundmusik eingefügt.
+Am 30. Oktober fügten wir Hintergrundmusik und Soundeffekte hinzu. Diese lassen sich über das EInstllungsmenü kontrollieren. Außerdem fügten wir einen Timer hinzu der bei dem Spielebildschirm die Dauer einer Runde zählt.
+Wir begannen damit unsere Notizen auf unserer GitHub Seite aufzushrieben.
+![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-10-30%20at%2016.17.51.png)
+Die Timer FUnktion
 
 
 ### 6. November - Überarbeiten Github 2 + Musik
