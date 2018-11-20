@@ -1,5 +1,9 @@
 # Informatik . Stundenlog
 
+
+1. [Introduction](#introduction)
+
+##Test<a name="introduction"></a>
 ### 21. August - Einführung
 
 In unser ersten Informatikstunde, am 21. August erhielten wir eine Einführung in die Abläufe des Informatikunterrichts. Wir überlegten uns einige Projektideen, hatten jedoch noch keine genaue Vorstellung was wir machen wollen und womit wir arbeiten möchten.
@@ -89,3 +93,9 @@ Also begannen wir damit unsere Aufzeichnungen (Stundenlog (Stichpunktartig)/ Scr
 
 ### 13. November - Readme.md Überarbeitung #2
 
+Weil wir am vorherigen Tag nicht mit der Readme.md fertig geworden sind haben wir daran weitergearbeitet. Wir haben entschieden die Bestenlistenfunktion zuhause zu vervollständigen und haben hierzu konkrete Pläne gefasst. Während wir unser Stundenlog schrieben testeten wir die App ausgiebig auf Fehler um diese vor der Abgabe zu beheben. Wir fanden zwar keine gravierenden Fehler, konnten jedoch einige Dinge feststellen, an denen wir nachbessern konnte, so wird die Flugbahn des Balls nicht mehr genau um 180° gedreht, sondern um einen zufälligen Wert von 175°-195° um den Spielspaß zu erhöhen.
+
+
+### 20. November - Readme.md Überarbeitung #3
+
+Da wir unser Projekt bis auf die Bestenliste fertiggestellt haben, beschlossen wir uns unsere Readme.md noch ein letztes mal zu erweitern und größtenteils fertigzustellen. 
