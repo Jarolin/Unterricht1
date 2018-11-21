@@ -1,6 +1,6 @@
 # Informatik Projekt 1
 *von Julian und Benedict, 11e*
-[Projektseite in der App Inventor Galerie](ai2.appinventor.mit.edu/?galleryId=5079043700555776)
+[Projektseite in der App Inventor Galerie](http://ai2.appinventor.mit.edu/?galleryId=5079043700555776)
 
 ## Inhaltsverzeichnis
 * [Projekt](#Projekt)
