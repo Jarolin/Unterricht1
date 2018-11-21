@@ -1,5 +1,6 @@
 # Informatik Projekt 1
 *von Julian und Benedict, 11e*
+[Projektseite in der App Inventor Galerie](ai2.appinventor.mit.edu/?galleryId=5079043700555776)
 
 ## Inhaltsverzeichnis
 * [Projekt](#Projekt)
@@ -29,7 +30,9 @@ Die Entwicklungsumgebung ermöglicht es einem, ohne große Vorkenntnisse, schnel
 ##### Screen1
 ![Screen1](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/DesignScreen1.png)
 
-Screen1 ist der Haupt- und Startbildschirm des Spiels. Auf der linken Seite kann man eine Vorschau des Designs sehen. An oberster Stelle befindet sich die `"TopBar"`, sie beinhaltet den Pauseknopf `("Pause")`, eine Anzeige für die Zeit und die aktuelle Punktzahl und den Knopf durch den man in das Einstellungsmenü gelangt. Dieses ist in der Vorschau nicht zu sehen, da es standardmäßig versteckt ist. Das Einstellunsmenü `("Settingsbar")` beinhaltet jeweils eine Checkbox um jeweils die Musik und die Geräusche ein-/auszuschalten, diese sind standardmäßig deaktiviert. Das Canvas `("Canvas1")` bildet das Gerüst für die Spielfläche. In ihr befinden sich `"Block1"` und `"Block2"`, welche man während des Spielens mit dem Ball `("Ball1")` treffen soll. Das letzte Element innerhalb des Canvas ist die untere Leiste `("Leiste")`. 
+`Screen1` ist der Haupt- und Startbildschirm des Spiels. Auf der linken Seite kann man eine Vorschau des Designs sehen. An oberster Stelle befindet sich die `TopBar`, sie beinhaltet den Pauseknopf `Pause`, eine Anzeige für die Zeit und die aktuelle Punktzahl und den Knopf durch den man in das Einstellungsmenü gelangt. Dieses ist in der Vorschau nicht zu sehen, da es standardmäßig versteckt ist. Das Einstellunsmenü `Settingsbar` beinhaltet jeweils eine Checkbox um jeweils die Musik und die Geräusche ein-/auszuschalten, diese sind standardmäßig deaktiviert. Das Canvas `Canvas1` bildet das Gerüst für die Spielfläche. In ihr befinden sich `Block1` und `Block2`, welche man während des Spielens mit dem Ball `Ball1` treffen soll. Das letzte Element innerhalb des Canvas ist die untere Leiste `Leiste`. Unterhalb der Vorschau werden die nicht sichtbaren Komponenten der App angezeigt. `Clock1` gibt sekündlich ein Signal aus, welches im Blockeditor abgerufen wird, mit `Player1` kann die Musik abgespielt werden und mit `Hit`ein einzelnes Geräusch.
 
 ##### GameOver
 ![GameOver](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/DesignGameOver.png)
+
+Der GameOver Bildschirm öffnet sich sobald der Ball bei `Screen1` auf die untere Bildschirmkante trifft. 
