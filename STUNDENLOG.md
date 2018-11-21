@@ -29,12 +29,14 @@ Zusätzlich erstellten wir uns einen eigenen Github Account, auf dem wir unseren
 ### 10. September - Beginn mit App Inventor
 
 Am 10. September beschlossen wir unser Projekt mit App Inventor durchzuführen und lernten uns in die Bedienung von eben diesem ein. Da wir noch keine feste Vorstellung von der benötigten Zeit von einem Projekt bei App Iventor hatten, begannen wir damit einen sehr simplen Taschenrechner zu entwickeln.
+
 ![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-09-11%20at%2015.09.03.png)
 
 
 ### 11. September - Beginn von finalem Projekt
 
 Am 11. September beschlossen wir nach unserer ersten Erfahrung mit dem Taschenrechner ein umfangreicheres Projekt ins Auge zu fassen. Wir beschlossen ein dem von Atari veröffentlichten Spieleklassiker "Breakout" ähnliches Projekt.
+
 ![https://en.wikipedia.org/wiki/File:Breakout2600.svg](https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Breakout2600.svg/640px-Breakout2600.svg.png)
 
 Original Atari Breakout - [Bild von WikiMedia](https://en.wikipedia.org/wiki/File:Breakout2600.svg)
@@ -42,6 +44,7 @@ Original Atari Breakout - [Bild von WikiMedia](https://en.wikipedia.org/wiki/Fil
 ### 17. September - Aufbau des Grundgerüsts (inkl. Steuerung über Bewgungssensor)
 
 Am 17. September begannen wir dann damit das Grundgerüst der App zu designen und eigneten uns Kenntnisse über das Arbeiten mit Canvas an. Anfangs beschlossen wir die Steurung nicht über den Touch-Bildschirm zu gestalten, sondern über den Gyroskopsensor unseres Smartphones. Wir versuchten den unteren Balken durch die Rotation des Smartphones zu steuern. Zeitbedingt konnten wir dies jedoch nicht mehr testen und nahmen uns das für die nächste Stunde vor.
+
 ![](https://github.com/StormarnJB/Unterricht1/blob/master/Screenshots/17-09-1.png)
 Erste Versuche eine Bewegungssteuerung einzurichten
 
@@ -49,6 +52,7 @@ Erste Versuche eine Bewegungssteuerung einzurichten
 ### 18. September - Fertigstellung des Grundgerüsts und der Steuerung
 
 Am 18. September stellten wir das Grundgerüst für die App fertig und einigten uns auf eine endgültige Spielidee. ZUsätzlich richteten wir einen "GameOver Screen" ein. Am Ende der Stunde besaßen wir die erste tatsächliche spielbare Version. Beim Testen stellten wir fest, dass die Steuerung über den Bewegungssensor sich als nicht sehr komfortabel und genau gestaltet und beschlossen diese durch eine "Touch-Steuerung" zu ersetzen.
+
 ![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-09-18%20at%2015.17.45.png)
 Version mit (*in diesem Bild nicht funktionsfähiger*) Bewegungssteuerung
 
@@ -65,6 +69,7 @@ Am 22. September bearbeiteten wir den "GameOver" Bildschirm, sodass dort die err
 ### 23. Oktober - Erstellen eines Einstellungsmenüs und weitere Fehlerbehebungen
 
 Anfangs in der Entwicklung fügten wir einen Einstellungsknopf hinzu, dieser konnte jedoch noch nichts. Zusätzlich fanden wir nach einigem Rumprobieren den Fehler, der Ball bewegte sich auch nach dem Öffnen des neuen Screens weiter und kollidierte so häufiger mit der unteren Bildschirmkante, was in dem häufigen Öffnen des "GameOver-Screens" resultierte. Um das zu verhindern setzen wir die Geschwindigkeit des Balls auf 0 und schließen den Hauptbildschirm.
+
 ![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-10-23%20at%2016.25.23.png)
 Das aktuelle Aussehen der App
 
@@ -72,6 +77,7 @@ Das aktuelle Aussehen der App
 ### 29. Oktober - Überarbeiten des Pausemenüs
 
 Am 29. Oktober eigneten wir uns Wissen über Prozeduren an und führten eine Pauseprozedur ein, da wir die gleichen Befehle bereits an bei dem Klicken des Pauseknopfes, dem Öffnen des Einstellungsknopfes und dem Berühren des Android-Zurückknopf ausführen.
+
 ![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-10-29%20at%2011.16.20.png)
 Der aktuelle Code mit der neuen Pauseprozedur
 
