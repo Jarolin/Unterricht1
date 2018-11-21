@@ -25,7 +25,7 @@ Die Entwicklungsumgebung ermöglicht es einem, ohne große Vorkenntnisse, schnel
 
 ## Aufbau <a name="Aufbau"></a>
 
-#### Oberfläche <a name="Oberfläche"></a>
+### Oberfläche <a name="Oberfläche"></a>
 ##### Screen1
 ![Screen1](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/DesignScreen1.png)
 
