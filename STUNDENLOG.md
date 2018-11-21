@@ -1,10 +1,10 @@
 # Informatik - Stundenlog
 
 ## *Inhalt:* <a name="Inhalt"></a>
-1. [August](#August)
-2. [September](#September)
-3. [Oktober](#Oktober)
-4. [November](#November)
+* [August](#August)
+* [September](#September)
+* [Oktober](#Oktober)
+* [November](#November)
 
 
 ## August <a name="August"></a>
