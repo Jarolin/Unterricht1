@@ -86,6 +86,7 @@ Der aktuelle Code mit der neuen Pauseprozedur
 
 Am 30. Oktober fügten wir Hintergrundmusik und Soundeffekte hinzu. Diese lassen sich über zwei Checkboxen im Einstllungsmenü ein-/ausschalten. Außerdem fügten wir einen Timer hinzu der bei dem Spielebildschirm die Dauer einer Runde anzeigt.
 Außerdem haben wir unsere Notizen von der Wikiseite auf die "Readme.md" (jetzt "STUNDENLOG.md") verschoben.
+
 ![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-10-30%20at%2016.17.51.png)
 
 Die Timer Funktion
