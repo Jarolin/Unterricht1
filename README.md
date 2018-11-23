@@ -1,20 +1,21 @@
 # Informatik Projekt 1
-*von Julian und Benedict, 11e*
+*von Julian und Benedict, 12e*
 [Projektseite in der App Inventor Galerie](http://ai2.appinventor.mit.edu/?galleryId=5079043700555776)
 
 ## Inhaltsverzeichnis
 * [Projekt](#Projekt)
-  * [Idee](#Idee)
+  * [Spiel](#Idee)
   * [App Inventor 2](#ai2)
 * [Aufbau](#Aufbau)
   * [Oberfläche](#Oberfläche)
-* [Stundenlog (*seperate Seite/Datei*)](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md)
+  * [Blöcke](#Blöcke)
+* [Stundenlog (*seperate Datei*)](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md)
 
 
 
 ## Das Projekt <a name="Projekt"></a>
 
-#### Die Idee <a name="Idee"></a>
+#### Das Spiel <a name="Idee"></a>
 
 Das Spiel „zwei“ ist angelehnt an das von Atari im Jahre 1976 herausgebrachte Arcade Spiel „Breakout“. In dieser Version gibt es allerdings nur zwei Blöcke, die immer wieder auftauchen. Es geht darum möglichst viele Punkte zu sammeln. Man bekommt jedes Mal 10 Punkte, wenn der Ball der sich am Anfang des Spiels in der Mitte des Bildschirms befindet (und durch wischen des Spielers einen Startimpuls bekommt), einen der beiden Blöcke berührt und somit zerstört, die dann sofort an anderer Stelle wiederauftauchen. Der Ball prallt von jeder Kante, sowie von den Blöcken und dem beweglichen Balken, ab. Trifft er allerdings auf die untere Kante ist das Spiel vorbei. Dies kann durch bewegen des Balkens verhindert werden, der sich allerdings nur horizontal bewegen lässt. Nach Spielende kann man seinen Namen eingeben und die erreichten Punkte in der Bestenliste automatisch eintragen lassen und einfach mit Freunden vergleichen, da nur das beste Ergebnis eines Spielers angezeigt wird, sofern er den gleichen Namen eingibt. Es können „unendlich viele“ Spieler in die Bestenliste aufgenommen werden, die sich aber auch ohne weiteres zurücksetzten lässt. Außerdem gibt es ein Einstellungsmenü in dem Hintergrundmusik und Geräusche (welche jedes Mal ertönt wenn der Ball einen Block oder den Balken trifft) unabhängig voneinander ein- und ausgeschaltet werden können. Zudem gibt es ein Pausenmenü.
 
@@ -35,4 +36,33 @@ Die Entwicklungsumgebung ermöglicht es einem, ohne große Vorkenntnisse, schnel
 ##### GameOver
 ![GameOver](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/DesignGameOver.png)
 
-Der GameOver Bildschirm öffnet sich sobald der Ball bei `Screen1` auf die untere Bildschirmkante trifft. 
+Der GameOver Bildschirm öffnet sich sobald der Ball bei `Screen1` auf die untere Bildschirmkante trifft und ermöglicht einen Neustart des Spiels und eine Bestenliste. Um die Bestenliste anzuzeigen wird das `HighScoreListView` benutzt. Auf der unteren Seite befinden sich der `ResetButton` mit dem die Bestenliste zurückgesetzt werden kann und der `RestartButton` mit dem das Spiel neugestartet werden kann. Zusätzlich existiert die Datenbank `TyniDB1` um die Daten für die Bestenliste auch nach Beenden der App zu speichern. Der `NameNotifier` fragt beim Öffnen des Bildschirms nach dem Namen und der `ResetNotifier` fordert eine Bestätigung nach dem Drücken des `ResetButton`.
+
+
+### Blöcke <a name="Blöcke"></a>
+##### Screen1
+
+![Teil 1](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screen1Blocks1.PNG)
+
+`Screen1` ist bei AppInventor immer der Startbildschirm und lässt sich nicht umbenennen. Sobald dieser gestartet wird werden die 3 Variablen `paused`, `seconds` und `flung` initialisiert, zusätzlich wird der Text `Loading`versteckt, da erst nach einer Layoutänderung alle Elemente richtig angezeigt werden. Durch diese Änderung beginnt der Ball sich zu bewegen, deshalb wird seine Geschwindigkeit auf '0' gesetzt. Die Leiste wird in ihre Ausgangsposition versetzt. Sobald `Clock1` gestartet wird, beginnt sie sekündlich ein Signal auszugeben, wodurch der Timer aktualisiert wird. Die Variable `seconds` wird jeweils um '1' erhöht, anschließend wird diese durch '60' geteilt (und abgerundet) um die Minutenzahl zu ermitteln. Um die Sekundenzahl zu ermitteln wird der Teilungsrest ermittelt. Aus ästhetischen Gründen wird dieser falls er niedriger als '10' ist von einer "0" angeführt.
+
+![Teil 2](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screen1Blocks2.PNG)
+
+In diesem Teil wird das Verhalten der verschiedenen Elemente im Canvas festgelegt. Sobald `Ball1` vom Spieler über den Bildschirm gezogen wird (`Ball1.Flung`) wird dies gespeichert, dem Ball eine Geschwindigkeit und ein Aktualisierungsintervall gegeben, seine Richtung angepasst und der Timer gestartet. Da der Ball nur zu Beginn des Spiels direkt bewegt werden darf, wird überprüft ob `flung` 'true' ist. Trifft der Ball nun auf eine Kante von `Canvas1` prallt er, solange es sich nicht um die untere Kante handelt, von dieser ab. Handelt es sich jedoch um die untere Kante, wird der Ball und die Musik gestoppt, der Bildschirm geschlossen und der `GameOver` Bildschirm unter Weitergabe der Punktzahl geöffnet. Aufgrund von Beschränkungen durch App Inventor lässt sich ein Bildschirm nicht schließen und gleichzeitig ein anderer öffnen, da das aber zu Problemen mit der Leistungen führen kann und auch zu einem nervigen Fehler führte, werden die Befehle einzeln auf die gezeigte Weise ausgeführt.
+Kollidiert der Ball mit einem Objekt `other` wird überprüft ob es sich bei diesem Objekt um `Leiste` handelt, tut es dass wird die Richtung des Balls gedreht. Wenn die Leiste sich aber wie ein Spiegel verhält wäre das Spiel alleine durch den Startimpuls entschieden, um dem vorzubeugen wird die Richtung des Balls um bis zu 15 Grad zufällig verändert. Falls erwünscht, wird unabhängig von `other` ein Geräusch abgespielt.
+Wenn es sich bei `other` nicht um die Leiste handelt, es also zwingend einer der Blöcke ist, wird die Punktzahl erhöht, die Richtung des Balls geändert und der Block an eine zufällige Stelle im oberen Drittel von `Canvas1` gesetzt. Dabei kann es jedoch vorkommen, dass die Blöcke übereinander liegen, ist dies der Fall wird die Position des Blockes erneut geändert.
+Die Leiste lässt sich durch den Spieler verschieben, dieser kann das aber nur auf der x-Ebene tun.
+
+![Teil 3](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screen1Blocks3.PNG)
+
+Die `pause`-Funktion wird immer dann aufgerufen, wenn das Spiel pausiert werden soll. Ist `paused` 'false', das Spiel also nicht pausiert, wird `paused` auf 'true' gesetzt, der Ball gestoppt, die Leiste blockiert und dem Spieler visualisiert, dass das Spiel pausiert ist. Wird `pause` aufgerufen, während `paused` 'true' ist, wird dieses auf 'false' gesetzt, dem Ball erneut die Geschwindigkeit 10 zugewiesen und der Hintergrund wieder zur Standardfarbe geändert. Um zu verhindern, dass der Ball sich bewegt, bevor das Spiel gestartet wird, wird dies überprüft und falls nötig die Geschwindigkeit auf '0' gesetzt.
+Drückt man auf `Pause`, den (meist physischen) Zurückknopf auf dem Gerät oder auf `Settings` wird die `pause`-Funktion aufgerufen. Um zu verhindern, dass das Spiel nach dem klicken von `Settings` weiterläuft wird `paused` auf 'false' gesetzt und die `Settingsbar` wird agezeigt, die `Topbar` wird versteckt. `Settingsback` tut das genaue Gegenteil. Innerhalb des Einstellungsmenüs befindet sich auch `CheckBoxMusic`, mit welcher man auf Wunsch Musik abspielen und beenden kann. 
+
+##### GameOver
+
+
+
+
+
+
+[Zum Stundenlog](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md)
