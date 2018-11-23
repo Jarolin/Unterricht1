@@ -51,7 +51,7 @@ Erste Versuche eine Bewegungssteuerung einzurichten
 
 ### 18. September - Fertigstellung des Grundgerüsts und der Steuerung
 
-Am 18. September stellten wir das Grundgerüst für die App fertig und einigten uns auf eine endgültige Spielidee. ZUsätzlich richteten wir einen "GameOver Screen" ein. Am Ende der Stunde besaßen wir die erste tatsächliche spielbare Version. Beim Testen stellten wir fest, dass die Steuerung über den Bewegungssensor sich als nicht sehr komfortabel und genau gestaltet und beschlossen diese durch eine "Touch-Steuerung" zu ersetzen.
+Am 18. September stellten wir das Grundgerüst für die App fertig und einigten uns auf eine endgültige Spielidee. Zusätzlich richteten wir einen "GameOver Screen" ein. Am Ende der Stunde besaßen wir die erste tatsächliche spielbare Version. Beim Testen stellten wir fest, dass die Steuerung über den Bewegungssensor sich als nicht sehr komfortabel und genau gestaltet und beschlossen diese durch eine "Touch-Steuerung" zu ersetzen.
 
 ![](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/Screenshot%202018-09-18%20at%2015.17.45.png)
 Version mit (*in diesem Bild nicht funktionsfähiger*) Bewegungssteuerung
