@@ -22,7 +22,7 @@ Das Spiel „zwei“ ist angelehnt an das von Atari im Jahre 1976 herausgebracht
 
 #### App Inventor 2 <a name="ai2"></a>
 
-"App Inventor" ist eine frei-zugängliche Online-Entwicklungsumgebung für Android Apps, diese würde ursprünglich von *Google Inc.* entwickelt und bereitgestellt, wird jedoch seit 2012 von dem *Massachusetts Institute of Technology* betrieben und weiterentwickelt.
+"App Inventor" ist eine frei-zugängliche Online-Entwicklungsumgebung für Android Apps, diese wurde ursprünglich von *Google Inc.* entwickelt und bereitgestellt, wird jedoch seit 2012 von dem *Massachusetts Institute of Technology* betrieben und weiterentwickelt.
 Die Entwicklungsumgebung ermöglicht es einem, ohne große Vorkenntnisse, schnell und einfach eine eigene Android-App zu entwickeln. Sie besitzt 2 Ebenen, den "Design Editor" und den "Blocks Editor". Im Designmodus kann man die Oberfläche gestalten und festlegen welche Sensoren und andere Elemente des Zielgeräts im Blockeditor zur Verfügung stehen. Im Blockmodus kann man das Verhalten der App beziehungsweise ihrer Elemente programmieren.
 *Quelle:* [*Wikipedia*](https://de.wikipedia.org/wiki/App_Inventor)
 
