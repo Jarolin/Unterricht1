@@ -11,6 +11,10 @@
   * [Oberfläche](#Oberfläche)
   * [Blöcke](#Blöcke)
 * [Stundenlog (*seperate Datei*)](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md)
+  * [August](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md#August)
+  * [September](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md#September)
+  * [Oktober](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md#Oktober)
+  * [November](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md#November)
 
 
 
@@ -32,12 +36,12 @@ Die Entwicklungsumgebung ermöglicht es einem, ohne große Vorkenntnisse, schnel
 ##### Screen1
 ![Screen1](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/DesignScreen1.png)
 
-`Screen1` ist der Haupt- und Startbildschirm des Spiels. Auf der linken Seite kann man eine Vorschau des Designs sehen. An oberster Stelle befindet sich die `TopBar`, sie beinhaltet den Pausenknopf `Pause`, eine Anzeige für die Zeit und die aktuelle Punktzahl und den Knopf durch den man in das Einstellungsmenü gelangt. Dieses ist in der Vorschau nicht zu sehen, da es standardmäßig versteckt ist. Das Einstellungsmenü `Settingsbar` beinhaltet jeweils eine Checkbox um jeweils die Musik und die Geräusche ein-/auszuschalten, diese sind standardmäßig deaktiviert. Das Canvas `Canvas1` bildet das Gerüst für die Spielfläche. In ihr befinden sich `Block1` und `Block2`, welche man während des Spielens mit dem Ball `Ball1` treffen soll. Das letzte Element innerhalb des Canvas ist die untere Leiste `Leiste`. Unterhalb der Vorschau werden die nicht sichtbaren Komponenten der App angezeigt. `Clock1` gibt sekündlich ein Signal aus, welches im Blockeditor abgerufen wird, mit `Player1` kann die Musik abgespielt werden und mit `Hit` ein einzelnes Geräusch.
+`Screen1` ist der Haupt- und Startbildschirm des Spiels. Auf der linken Seite kann man eine Vorschau des Designs sehen. An oberster Stelle befindet sich die `TopBar`, sie beinhaltet den Pausenknopf `Pause`, eine Anzeige für die Zeit und die aktuelle Punktzahl und den Knopf durch den man in das Einstellungsmenü gelangt. Dieses ist in der Vorschau nicht zu sehen, da es standardmäßig versteckt ist. Das Einstellungsmenü `Settingsbar` beinhaltet jeweils eine Checkbox um jeweils die Musik und die Geräusche ein-/auszuschalten, diese sind standardmäßig deaktiviert. Das Canvas `Canvas1` bildet das Gerüst für die Spielfläche. In ihr befinden sich `Block1` und `Block2`, welche man während des Spielens mit dem Ball `Ball1` treffen soll. Das letzte Element innerhalb des Canvas ist die untere Leiste `Leiste`. Unterhalb der Vorschau werden die nicht sichtbaren Komponenten der App angezeigt. `Clock1` gibt sekündlich ein Signal aus, welches im Blockeditor abgerufen wird, mit `Player1` wird Musik abgespielt und mit `Hit` ein einzelnes Geräusch.
 
 ##### GameOver
 ![GameOver](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/DesignGameOver.png)
 
-Der GameOver Bildschirm öffnet sich sobald der Ball bei `Screen1` auf die untere Bildschirmkante trifft und ermöglicht einen Neustart des Spiels und eine Bestenliste. Um die Bestenliste anzuzeigen wird das `HighScoreListView` benutzt. Auf der unteren Seite befinden sich der `ResetButton` mit dem die Bestenliste zurückgesetzt werden kann und der `RestartButton` mit dem das Spiel neugestartet werden kann. Zusätzlich existiert die Datenbank `TyniDB1` um die Daten für die Bestenliste auch nach Beenden der App zu speichern. Der `NameNotifier` fragt beim Öffnen des Bildschirms nach dem Namen und der `ResetNotifier` fordert eine Bestätigung nach dem Drücken des `ResetButton`.
+Der GameOver Bildschirm öffnet sich sobald der Ball bei `Screen1` auf die untere Bildschirmkante trifft und ermöglicht einen Neustart des Spiels. Zusätzlich wird eine Bestenliste angezeigt, dafür wird das `HighScoreListView` benutzt. Auf der unteren Seite befinden sich der `ResetButton` mit dem die Bestenliste zurückgesetzt werden kann und der `RestartButton` mit dem das Spiel neugestartet werden kann. Zusätzlich existiert die Datenbank `TinyDB1` um die Daten für die Bestenliste auch nach Beenden der App zu speichern. Der `NameNotifier` fragt beim Öffnen des Bildschirms nach dem Namen und der `ResetNotifier` fordert eine Bestätigung nach dem Drücken des `ResetButton`.
 
 
 ### Blöcke <a name="Blöcke"></a>
