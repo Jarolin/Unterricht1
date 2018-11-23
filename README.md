@@ -1,5 +1,6 @@
 # Informatik Projekt 1
 *von Julian und Benedict, 12e*
+
 [Projektseite in der App Inventor Galerie](http://ai2.appinventor.mit.edu/?galleryId=5079043700555776)
 
 ## Inhaltsverzeichnis
@@ -60,9 +61,16 @@ Drückt man auf `Pause`, den (meist physischen) Zurückknopf auf dem Gerät oder
 
 ##### GameOver
 
+![Teil 1](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/GameOverBlocks1.PNG)
+
+Nach dem Öfnnen von `GameOver` werden die Variablen `score` und `highscore` initialisiert. Score wird auf den Punktestand (`start value`) gesetzt und der NameNotifier fordert den Nutzer auf einen Namen für die Eintragung in die Bestenliste einzugeben. Sobald ein Name eingegeben wurde, wird die Bestenliste angezeigt. Diese kann über den `ResetButton` zurückgesetzt werden. Um ein ungewünschtes Löschen zu verhindern wird ein Dialog über den `ResetNotifier` geöffnet, der um Bestätigung bittet. Wird 'Ja' gewählt, wird die TinyDB1 geleert und die `showScores`-Funktion aufgerufen. Der `RestartButton` öffnet den Spielbildschirm.
+
+![Teil 2](https://raw.githubusercontent.com/StormarnJB/Unterricht1/master/Screenshots/GameOverBlocks2.PNG)
+
+Sobald `NameNotifier` eine Eingabe erhalten hat, wird der Name mit der Punktezahl gespeichert. Vor dem Einspeichern wird überprüft ob das Textfeld vom `NameNotifier` leer gelassen wurde. Bei dem Einspeichern wird zusätzlich überpüft ob unter dem gleichen Namen bereits ein besserer Wert eingespeichert wurde, falls ja wird dieser beibehalten. Nach dem Einspeichern wird die `showScores`-Funktion aufgerufen, welche die Bestenliste sortiert und anzeigt.
+Am Anfang wird eine Liste mit dem Element 'Nulll: 0' erstellt, welches am Ende wieder entfernt wird. Nachdem die Liste erstellt wurde wird über die Elemente von TinyDB1 iteriert. `itemdb` stellt den Namen (`tag`) und `itemdb_value` den zugehörigen Punktestand (`value`) dar. Diese beiden Werte werden jeweils an die `putinlist`-Funktion weitergegeben.
+Die `putinlist` beinhaltet erneut eine Schleife. Diese iteriert über die Elemente der Liste `highscore`, diese muss deshalb am Anfang mindestens ein Element beinhalten. Innerhalb der einzelnen Elemente der Liste werden die einzelnen Werte (Namen und Punkte) durch ": " getrennt. Innerhalb der Schleife werden diese Werte dann wieder aufgetrennt, um die Punkte miteinander ergleichen zu können. Die Schleife wird solange ausgeführt bis ein `Value` (also der Wert aus` TinyDB1`), den Wert `item_value`, welcher gerade von der zweiten Schleife aufgerufen wird, übersteigt oder entspricht. Sobald dies der Fall ist werden `Tag` und `Value` in die Liste an der Stelle `index` eingespeichert (wobei die erste Stelle der Liste den index '1' besitzt) und die Schleife beendet. Da das letzte Element ('Nulll: 0') den Punktestand '0' beinhaltet und negative Punktzahlen nicht möglich sind, wird kein Element von `TinyDB1` übersprungen.
+In der `showScores`-Funktion werden nun die von `HighscoreListView` anzuzeigenden Elemente auf die Liste `highscore` festgelegt.
 
 
-
-
-
-[Zum Stundenlog](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md)
+#### [Zum Stundenlog](https://github.com/StormarnJB/Unterricht1/blob/master/STUNDENLOG.md)
